@@ -18,17 +18,22 @@ class MapViewController: UIViewController {
     
     // MARK:- Views
     var mapView: MKMapView!
+    var searchInputView: SearchInputView!
 
+    //MARK: - Controller Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         configureMapview()
         configureLocationServices()
+        configureSearchInputView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         centerMapOnUserLocation()
     }
+    
+    // MARK:- Helper Methods
     
     fileprivate func configureMapview() {
         
@@ -43,6 +48,17 @@ class MapViewController: UIViewController {
         mapView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         mapView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         mapView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+    }
+    
+    func configureSearchInputView() {
+        self.searchInputView = SearchInputView()
+        searchInputView.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.addSubview(searchInputView)
+        searchInputView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        searchInputView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        searchInputView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: (view.frame.height - 88)).isActive = true
+        searchInputView.heightAnchor.constraint(equalToConstant: view.frame.height).isActive = true
     }
     
     func configureLocationServices() {

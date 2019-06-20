@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD04F71822BB8C69006AE04A /* SearchInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD04F71722BB8C69006AE04A /* SearchInputView.swift */; };
 		BD51C2F222BB7E04002E2192 /* LocationRequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51C2F122BB7E04002E2192 /* LocationRequestController.swift */; };
 		BDCD0E0522BB783500DDEECD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCD0E0422BB783500DDEECD /* AppDelegate.swift */; };
 		BDCD0E0722BB783500DDEECD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCD0E0622BB783500DDEECD /* MapViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD04F71722BB8C69006AE04A /* SearchInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInputView.swift; sourceTree = "<group>"; };
 		BD51C2F122BB7E04002E2192 /* LocationRequestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRequestController.swift; sourceTree = "<group>"; };
 		BDCD0E0122BB783500DDEECD /* MapView Pull up Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MapView Pull up Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCD0E0422BB783500DDEECD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +44,7 @@
 			children = (
 				BDCD0E0622BB783500DDEECD /* MapViewController.swift */,
 				BD51C2F122BB7E04002E2192 /* LocationRequestController.swift */,
+				BD04F71722BB8C69006AE04A /* SearchInputView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDCD0E0722BB783500DDEECD /* MapViewController.swift in Sources */,
+				BD04F71822BB8C69006AE04A /* SearchInputView.swift in Sources */,
 				BDCD0E0522BB783500DDEECD /* AppDelegate.swift in Sources */,
 				BD51C2F222BB7E04002E2192 /* LocationRequestController.swift in Sources */,
 			);
